@@ -1,0 +1,127 @@
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url(assets/background-photo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.business-card {
+    width: 650px;
+    max-width: calc(100vw - 10px);
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+    color: rgba(32, 33, 32, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(61, 61, 61, 1);
+}
+
+.details {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 350px;
+    height: auto;
+    float: right;
+}
+
+.photo {
+    margin-left: 5%;
+    width: 250px;
+    height: auto;
+    float: left;
+}
+
+img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(10%);    
+}
+
+.headline, .about {
+    margin-bottom: 5%;
+
+}
+
+.headline {
+    line-height: 1.8em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+ #from {
+     font-size: 13px;
+     font-weight: 300;
+     color: rgba(77, 74, 74, 1);
+ }
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.content {
+    border-top: 1px solid rgba(77, 74, 74, 1);
+  }
+
+.about {
+    margin-top: 5%;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.links {
+    text-align: center;
+}
+
+a {
+    color: rgba(61, 61, 61, 1); 
+}
+
+/* Contact links */
+
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline;
+  }
